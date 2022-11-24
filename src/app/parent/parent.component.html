@@ -1,0 +1,8 @@
+<div>
+    <input type="text" #textbox1 value="Initial Value">
+    <button type="button" (click)="changeData1(textbox1.value)">Pass</button>
+</div>
+<div>
+    <h3>data Received from Child {{received}}</h3>
+</div>
+<app-child [message]="passing" (notify)="changeData($event)"></app-child>

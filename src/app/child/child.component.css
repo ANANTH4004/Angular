@@ -1,0 +1,7 @@
+.childDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 30px;
+    vertical-align: middle;
+}
