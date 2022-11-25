@@ -9,14 +9,16 @@
 </ng-container>
 <button class="btn btn-primary" (click)="addNew()">Add New</button> -->
 <ng-container *ngFor="let item of people" > 
-    <div class="centerDiv" [ngClass]="{
-       
-        'text-primary':item.age > 22,
-        'text-danger': item.age <= 22
-    }">
+    <div *ngIf="item.age > 22 ; else elsepart " class="centerDiv">
        <span > Name : {{item.name}}</span>
         <span >Age : {{item.age}}</span>
         <hr>
     </div>
-   
+    <ng-template #elsepart>
+        <div class="centerDiv text-primary">
+            <span > Name : {{item.name}}</span>
+             <span >Age : {{item.age}}</span>
+             <hr>
+         </div>
+    </ng-template>
 </ng-container>
