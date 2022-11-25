@@ -1,7 +1,8 @@
-<ng-container *ngFor="let item of people"> 
-    <div *ngIf="item.age>=22">
-        <span>Name : {{item.name}}</span><br>
-        <span>Age : {{item.age}}</span>
-        <hr>
+<ng-container *ngFor="let item of people" > 
+    <div *ngIf="item.age>35" Class="centerDiv">
+       <span class="text-danger"> Name : {{item.name}}</span>
+        <span class="text-primary">Age : {{item.age}}</span>
+        <br>
     </div>
 </ng-container>
+<button class="btn btn-primary" (click)="addNew()">Add New</button>

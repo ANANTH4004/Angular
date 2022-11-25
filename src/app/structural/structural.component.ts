@@ -29,4 +29,10 @@ export class StructuralComponent {
   'name':"Bidhu"
  }]
  }
+  addNew(){
+    this.people.push({
+      'name':"Kathi",
+      'age':4
+    })
+  }
 }
