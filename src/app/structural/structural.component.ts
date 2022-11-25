@@ -35,4 +35,9 @@ export class StructuralComponent {
       'age':4
     })
   }
+   centerdiv = {
+    'display':'grid',
+    'justify-content': 'center',
+    'align-items': 'center'
+  }
 }
