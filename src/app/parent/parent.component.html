@@ -1,8 +1,18 @@
-<div>
+<!-- <div>
     <input type="text" #textbox1 value="Initial Value">
     <button type="button" (click)="changeData1(textbox1.value)">Pass</button>
 </div>
 <div>
     <h3>data Received from Child {{received}}</h3>
 </div>
-<app-child [message]="passing" (notify)="changeData($event)"></app-child>
+<app-child [message]="passing" (notify)="changeData($event)"></app-child> -->
+
+<app-content-demo>
+    <div class="centerDiv" #div1 [style.color]="'red'">
+        This is from the parent class div 1
+    </div>
+    <div #div2 >
+        This is from the parent  div 2
+    </div>
+</app-content-demo>
+<button (click)="changeContent()" class="btn btn-primary">Change Content</button>

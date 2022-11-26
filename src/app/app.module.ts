@@ -8,6 +8,7 @@ import { FComponentComponent } from './f-component/f-component.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { StructuralComponent } from './structural/structural.component';
+import { ContentDemoComponent } from './content-demo/content-demo.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { StructuralComponent } from './structural/structural.component';
     FComponentComponent,
     ParentComponent,
     ChildComponent,
-    StructuralComponent
+    StructuralComponent,
+    ContentDemoComponent
   ],
   imports: [
     BrowserModule,
