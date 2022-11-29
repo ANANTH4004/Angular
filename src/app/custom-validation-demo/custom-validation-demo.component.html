@@ -1,0 +1,30 @@
+
+
+<p> works</p>
+<div>
+<form [formGroup]="validationForm" (ngSubmit)="register(validationForm)">
+    <p>is valid {{validationForm.valid ? 'yes':'no'}}</p>
+<div class="form-group">
+    <label>Name : </label>
+    <input type="text" name="name" formControlName="name" required >
+    <app-error-message [control]="validationForm.controls['name']"> </app-error-message>
+</div>
+<div class="form-group">
+    <label>Email: </label>
+    <input type="text" name="Email" formControlName="Email" required appErrors>
+    <app-error-message [control]="validationForm.controls['Email']"> </app-error-message>
+</div >
+<div class="form-group">
+    <label>Password: </label>
+    <input type="text" name="password" formControlName='password' required >
+    <app-error-message [control]="validationForm.controls['password']"> </app-error-message>
+</div>
+<div class="form-group">
+    <label>Age : </label>
+    <input type="number" name="Age" formControlName="Age" required minlength="6">
+    <app-error-message [control]="validationForm.controls['Age']"> </app-error-message>
+</div>
+<button class="btn btn-primary"  type="submit">Submit</button>
+
+</form>
+</div>
